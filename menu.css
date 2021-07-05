@@ -1,0 +1,65 @@
+.Main {
+    background: url(Img03.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: 100%;
+    padding: 100px;
+}
+
+
+.Main_Container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.Main_Content {
+    position: relative;
+    max-width: 800px;
+    max-height: 200px;
+    padding: 20px 0 0 60px;
+}
+
+    .Main_Content h1 {
+        color: #fff;
+        font-size: 4em;
+        line-height: 2em;
+        font-weight: 800;
+    }
+
+    .Main_Content h3 {
+        color: #fff;
+        font-size: 2em;
+        line-height: 1.4em;
+        font-weight: 200;
+    }
+
+
+
+
+.sci {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+    .sci li {
+        list-style: none;
+    }
+
+        .sci li a {
+            display: inline-block;
+            margin: 5px 0;
+            transform: scale(0.6);
+            filter: invert(1);
+        }
