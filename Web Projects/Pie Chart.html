@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>More Data</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <img src="Images/Background.png" class="logo">
+        <nav>
+            <ul id="menuList">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Data.html">Data</a></li>
+                <li><a href="Pie Chart.html">More Data</a></li>
+                <li><a href="Design.html">Design</a></li>
+                <li><a href="TheoryBlogs.html">Theory Blogs</a></li>
+            </ul>
+        </nav>
+        <img src="Images/menu.png" class="menu-icon" onclick="togglemenu()">
+    </header>
+
+
+    <section class="container">
+
+
+        <section class="row">
+            <section class="col-1">
+
+                <article class="content">
+
+                    <h1>Pie chart how much of Sub-Saharan Africa's art is present in Europe.</h1>
+            
+                </article>
+                
+            </section>
+            <section class="col-2">
+                
+                <article class="content">
+
+                    <article id="chart">
+                        <script>
+                            var width = 800, height = 400;
+                            var svg = d3.select("#chart").append("svg")
+                                      .attr("width",width).attr("height", height);
+                            
+                            var details = [{name:'African art in Europe', art: 90},
+                                          {name:'African art in Africa', art: 10},];
+                
+                            var data = d3.pie().sort(null).value(function(d){return d.art;})
+                            (details);
+                            console.log(data);
+                            var segments = d3.arc()
+                                           .innerRadius(0)
+                                           .outerRadius(200)
+                                           .padAngle(.05)
+                                           .padRadius(50);
+                            var sections = svg.append("g").attr("transform", "translate(250, 250")
+                                           .selectAll("path").data(data);
+                            sections.enter().append("path").attr("d",segments);
+                
+                        </script>
+                    </article>
+            
+                </article>
+        
+            </section>
+        
+        </section>
+
+        
+    
+
+    </section>
+
+
+
+    
+   
+
+    
+    <main class="Theory" id="Theory">
+
+        <section class="TheoryBlogs_Container1">
+
+            <section class="Tblogs__content">
+                <h1>Data Analysis</h1>
+
+                
+
+                <p>
+                    There are only two values used in this Pie chart. One is largely greater than the other. 
+                    I used a pie chart to emphasize the size difference between the two values by showing how much space one takes up compared to the other.
+                     The pie chart is easy to read as it draws 
+                    the viewer's attention to the larger item on the chart, which is what is needed to show the viewer how pressing the issue is. 
+                </p>
+                   
+
+            </section>
+
+        </section>
+
+        
+
+
+    
+
+
+
+
+
+
+
+
+    <footer>
+        <section class="social-links">
+            <img src="Images/fb.png">
+            <img src="Images/tw.png">
+            <img src="Images/ig.png">
+                
+        </section>
+    </footer>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px";
+    
+            }
+            else
+            {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>

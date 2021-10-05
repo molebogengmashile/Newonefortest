@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <img src="Images/Background.png" class="logo">
+        <nav>
+            <ul id="menuList">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Data.html">Data</a></li>
+                <li><a href="Pie Chart.html">More Data</a></li>
+                <li><a href="Design.html">Design</a></li>
+                <li><a href="TheoryBlogs.html">Theory Blogs</a></li>
+        </nav>
+        <img src="Images/menu.png" class="menu-icon" onclick="togglemenu()">
+    </header>
+<section class="container">
+   
+
+    <section class="row">
+        <section class="col-1">
+            <h2>Afro Art Space</h2>
+            <h3>Celebrating the wonderful world of African art</h3>
+            
+            <button type="button">Explore<img src="Images/arrow.png"></button>
+    
+        </section>
+        <section class="col-2">
+            <img src="Images/Bk.png" class="Image">
+            <section class="color-box"></section>
+            
+    
+        </section>
+    
+    </section>
+    
+</section>
+
+<footer>
+    <section class="social-links">
+        <img src="Images/fb.png">
+        <img src="Images/tw.png">
+        <img src="Images/ig.png">
+            
+    </section>
+</footer>
+
+<script>
+    var menuList = document.getElementById("menuList");
+    menuList.style.maxHeight = "0px";
+    function togglemenu(){
+        if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "130px";
+
+        }
+        else
+        {
+            menuList.style.maxHeight = "0px";
+        }
+    }
+
+    fetch('File.json').then(function(response){
+
+        return response.json();
+    }).then(function(obj){
+        console.log(obj);
+    }).catch(function(error){
+        console.error('Not working');
+        console.error(error);
+
+    });
+    
+</script>
+
+</body>
+</html>
