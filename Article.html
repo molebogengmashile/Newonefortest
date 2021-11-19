@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theory</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="Script.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <img src="Images/Background.png" class="logo">
+        <nav>
+            <ul id="menuList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Data.html">Data</a></li>
+                <li><a href="Design.html">Design</a></li>
+                
+                <li><a href="Blogs.html">Blogs</a></li>
+        </nav>
+            </ul>
+        </nav>
+        <img src="Images/menu.png" class="menu-icon" onclick="togglemenu()">
+    </header>
+
+
+   
+    <main class="Theory" id="Theory">
+
+        <section class="TheoryBlogs_Container">
+    
+            <section class="Tblogs__content">
+                <h1>Andrea du Plessis wins SASOL NEW SIGNATURES 2021.  </h1>
+    
+                <br>
+                <br>
+                <br>
+               
+    
+                <p>
+                    Andrea du Plessis is a multi-media artist based in Cape Town, South Africa. Her art work "Paloceae Lupantozoa",
+                     inspired by artist Johnson Heade’s “Orchids and Hummingbirds” series, 
+                     is a mixed media project that incorporates the use of oil painting as well as VR to create a unique artistic experience. 
+                      “The oil painting and AR video create a link between past and contemporary representations and experiences of nature. 
+                      By juxtaposing the 19th century Romantic tradition of painting with emerging technologies, the artwork creates a tension-filled
+                       interface, momentarily transporting the viewer into a familiar yet alien world. But most crucially, experienced in its multiple modalities, 
+                       the artwork offers the viewer an opportunity to reflect
+                     on their relationship with nature and our changing landscape,” says du Plessis in an interview with SASOL.  
+                        <br>
+                        <br>
+                        Andrea wins a grand prize of R100 000 as well as a solo exhibition at the Pretoria Art Museum in 2022.
+                         Her innovative project may encourage
+                         more African artists to explore the growing digital art space and hopefully expand it to new heights. 
+                         <br>
+                         <br>
+                         <br>
+                         References: SASOL
+
+                </p>
+                   
+    
+            </section>
+
+            <section class="Tblogs__content">
+                <img src="Andrea.jpg"></img>
+                <a href="https://www.creativefeel.co.za/2021/11/we-dont-exist-on-this-planet-in-isolation-a-qa-with-sasol-new-signatures-winner-andrea-du-plessis/"> Andrea du Plessis</a>
+                   
+    
+            </section>
+
+            
+    
+        </section>
+        
+    </main> 
+
+
+
+
+
+
+
+    <footer>
+        <section class="social-links">
+            <img src="Images/fb.png">
+            <img src="Images/tw.png">
+            <img src="Images/ig.png">
+                
+        </section>
+    </footer>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px";
+    
+            }
+            else
+            {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>

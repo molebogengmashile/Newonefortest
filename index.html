@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <img src="Images/Background.png" class="logo">
+        <nav>
+            <ul id="menuList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Data.html">Data</a></li>
+                <li><a href="Design.html">Design</a></li>
+                
+                <li><a href="Blogs.html">Blogs</a></li>
+        </nav>
+        </nav>
+        <img src="Images/menu.png" class="menu-icon" onclick="togglemenu()">
+        
+    </header>
+<section class="container">
+   
+
+    <section class="row">
+        <section class="col-1">
+            <h2>Afro Art Space</h2>
+            <h3>Celebrating the wonderful world of African art</h3>
+            
+           
+            
+    
+        </section>
+        
+        <section class="col-2">
+            <img src="Images/Bk.png" class="Image">
+            <section class="color-box"></section>
+            
+    
+        </section>
+    
+    </section>
+    
+
+    
+   
+    
+    
+</section>
+<section class="line"><hr></section>
+
+
+   
+<main class="Theory" id="Theory">
+
+    <section class="TheoryBlogs_Container2">
+
+        <section class="Tblogs__content">
+            <h1>African Art</h1>
+
+            <br>
+            <br>
+            <br>
+
+            <p>
+                This webpage is meant to celebrate African artists as well as highlighting issues with in the art community on a 
+                local and global scale. It will feature up and coming artists to help promote them as well as giving them a
+                 platform to share their views and ideas with the world and just through art.  There is also a large focus on African art 
+                 history as it is 
+                important that we acknowledge and appreciate the history of African art and how it impacts African artists today. 
+            </p>
+               
+
+        </section>
+
+    </section>
+</main> 
+<section class="line"><hr></section>
+
+<section class="card_container">
+    <section class="card">
+        <section class="card_content">
+            <h2>Blogs</h2>
+            <p>Art and data visualization blog posts </p>
+            <br>
+            <br>
+            <button type="button"><a href="Blogs.html">Read</a> <img src="Images/arrow.png"> </button>
+
+        </section>
+       
+       
+    </section>
+    <section class="card">
+        <section class="card_content">
+            <h2>Data</h2>
+            <p>Graphical representation of Historical African art data</p>
+            <button type="button"><a href="Data.html">Read</a> <img src="Images/arrow.png"></button>
+
+        </section>
+    </section>
+    <section class="card">
+        <section class="card_content">
+            <h2>Design</h2>
+            <p>More information about the webpage's design</p>
+            <button type="button"><a href="Design.html">Read</a> <img src="Images/arrow.png"></button>
+
+        </section>
+    </section>
+   
+
+</section>
+
+<footer>
+    <section class="social-links">
+        <img src="Images/fb.png">
+        <img src="Images/tw.png">
+        <img src="Images/ig.png">
+            
+    </section>
+</footer>
+
+<script>
+    var menuList = document.getElementById("menuList");
+    menuList.style.maxHeight = "0px";
+    function togglemenu(){
+        if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "130px";
+
+        }
+        else
+        {
+            menuList.style.maxHeight = "0px";
+        }
+    }
+
+    fetch('File.json').then(function(response){
+
+        return response.json();
+    }).then(function(obj){
+        console.log(obj);
+    }).catch(function(error){
+        console.error('Not working');
+        console.error(error);
+
+    });
+    
+</script>
+
+</body>
+</html>

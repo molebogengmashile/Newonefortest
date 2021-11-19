@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theory</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="Script.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <img src="Images/Background.png" class="logo">
+        <nav>
+            <ul id="menuList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Data.html">Data</a></li>
+                <li><a href="Design.html">Design</a></li>
+                
+                <li><a href="Blogs.html">Blogs</a></li>
+        </nav>
+            </ul>
+        </nav>
+        <img src="Images/menu.png" class="menu-icon" onclick="togglemenu()">
+    </header>
+
+
+   
+    <main class="Theory" id="Theory">
+
+        <section class="TheoryBlogs_Container2">
+    
+            <section class="Tblogs__content">
+                <h1>What is interaction for data visualization? </h1>
+    
+                <br>
+                <br>
+                <br>
+               
+    
+                <p>
+                    In the study by Evanthia Dimara and Charles Perin, the question of what interaction for data visualization truly means is explored.
+                     In the field of Human-Computer Interaction, interaction is described as a relationship between human and computer,
+                      whilst visualization researchers prioritize the relationship between the data and the human.
+                       After collecting and analyzing a vast number of visualization papers, Evanthia Dimara and Charles Perin have
+                        concluded that interaction in visualization is a broad topic, however, they have settled on a way to define and describe it.
+                        <br>
+                        <br>
+                        When it comes to the definition of interaction for data visualization,
+                         they have identified mandatory components that interaction must include.
+                          These components are the external and internal entities, 
+                          and the external and internal actions. External entities involve the user and the data.
+                           Internal actions are more goal oriented and focus on the user's achievements with the data.
+                            With external actions, interaction is referred to as a dialogue between the user and the visualization.
+                             The user communicates with the visualization system by making an input and the system communicates back by
+                              responding to the user. Internal actions deal with how the user interprets the visualization system's responses. 
+                              Interaction for data visualization is mainly goal oriented, that goal being to encourage the user to further
+                         explore the data and without being confused or overwhelmed by the new information that is being discovered. 
+                         <br>
+                         <br>
+                         <br>
+                         References: Dimara E, Perin C. What is Interaction for Data Visualization?.
+                          IEEE Transactions on Visualization and Computer Graphics,
+                          Institute of Electrical and Electronics Engineers, 2020, 26 (1), pp.119 - 129. ff10.1109/TVCG.2019.2934283ff. ffhal-02197062 
+
+                </p>
+                   
+    
+            </section>
+    
+        </section>
+        <section class="line"><hr></section>
+
+        
+        <section class="TheoryBlogs_Container2">
+    
+            <section class="Tblogs__content">
+                <h1>Interactivity as a semiotic device. </h1>
+    
+                <br>
+                <br>
+                <br>
+    
+                <p>
+                    I will be analyzing the case study 'Words Invented or Coined by Shakespeare', 
+                    from the information is beautiful webpage, in terms of its role as a semiotic device.
+                     The case study shows a number of words that were either invented or coined by Shakespeare. The words are
+                     clustered in a large circular shape in the middle of the page. They are also represented in different in colors and scales. 
+                     <br>
+                    <br>
+                    On the page, it is revealed that the larger the word is, the more popular it is today.
+                     Majority of the larger words are placed in the middle of the circle. Having larger items 
+                     placed in the middle immediately draws your attention to it. The difference in sizes allows for
+                     comparison among the words. The larger ones might be interpreted as more important because they what you see first. 
+                     <br>
+                     <br>
+                     The words are also either in a grey color or an orange color. As the user hovers over word,
+                      a small box pops up on the screen. As the user hovers over more words,
+                       it is revealed that the words in orange have extra information about the word, where as the ones in grey do not.
+                         Using different colors and sizes on the words encourages the user to explore why this is.  Using size to draw your attention
+                      to the most important ones and color to differentiate between the one with extra information and the ones with out. 
+                      <br>
+                      <br>
+                      <br>
+                      Reference: David McCandless, Swanuja Maskelar. Information is Beautiful: Words Invented or Coined by Shakespeare 
+                </p>
+                   
+    
+            </section>
+    
+        </section>
+    </main> 
+
+
+
+
+
+
+
+    <footer>
+        <section class="social-links">
+            <img src="Images/fb.png">
+            <img src="Images/tw.png">
+            <img src="Images/ig.png">
+                
+        </section>
+    </footer>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px";
+    
+            }
+            else
+            {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>

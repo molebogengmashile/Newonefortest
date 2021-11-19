@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <img src="Images/Background.png" class="logo">
+        <nav>
+            <ul id="menuList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Data.html">Data</a></li>
+                <li><a href="Design.html">Design</a></li>
+                
+                <li><a href="Blogs.html">Blogs</a></li>
+            </ul>
+        </nav>
+        <img src="Images/menu.png" class="menu-icon" onclick="togglemenu()">
+    </header>
+
+
+
+    <main class="Theory" id="Theory">
+
+        <section class="TheoryBlogs_Container1">
+
+            <section class="Tblogs__content">
+                <h1>Rationale</h1>
+
+                <p>
+                    This webpage is meant to celebrate african artists as well as highlighting issues with in the art community on a local and global scale. It will feature up and coming artists to help promote them as well as giving them a platform to share their views and ideas with the world and just through art.  
+                </p>
+                   
+
+            </section>
+
+        </section>
+
+        <section class="TheoryBlogs_Container1">
+
+            <section class="Tblogs__content">
+                
+
+                <a href=" Wire Frames.pdf"> Wireframes</a>
+                    
+
+            </section>
+           
+        </section>
+
+
+
+
+
+    <footer>
+        <section class="social-links">
+            <img src="Images/fb.png">
+            <img src="Images/tw.png">
+            <img src="Images/ig.png">
+                
+        </section>
+    </footer>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px";
+    
+            }
+            else
+            {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
